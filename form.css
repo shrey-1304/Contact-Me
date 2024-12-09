@@ -147,15 +147,11 @@ p a::after {
 }
 p a#lk:hover::after{
   width: 10%; /* Expand fully */
-  left: 35%; /* Reset left position */
-}
-p a#dc:hover::after{
-  width: 8%; /* Expand fully */
-  left: 48%; /* Reset left position */
+  left: 41%; /* Reset left position */
 }
 p a#tw:hover::after{
   width: 8%; /* Expand fully */
-  left: 59.5%; /* Reset left position */
+  left: 53%; /* Reset left position */
 }
 
 
