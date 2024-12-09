@@ -247,6 +247,9 @@ video source{
     left: 64%; /* Reset left position */
 
   }
+  video{
+    height:100%;
+  }
   .footer-social a {
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
