@@ -139,6 +139,7 @@ textarea {
   font-size: 12px;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 2%;
 }
 textarea:focus{
   outline:solid #d079ff;
@@ -146,7 +147,7 @@ textarea:focus{
 #char-counter {
   position: absolute;
   top: 2px;
-  left: 70%;
+  left: 390px;
   font-size: 14px;
   color: #aaa;
   padding: 2px 5px;
@@ -181,7 +182,7 @@ p a::after {
 }
 p a#lk:hover::after{
   width: 10%; /* Expand fully */
-  left: 41%; /* Reset left position */
+  left: 40%; /* Reset left position */
 }
 p a#tw:hover::after{
   width: 8%; /* Expand fully */
@@ -196,7 +197,7 @@ button{
     background-color: #a600ff;
     color: white;
     border:solid transparent;
-    border-radius: 1%;
+    border-radius: 30px;
     width: 50%;
     height: 50px;
     transition: background-color 0.5s;
@@ -215,6 +216,7 @@ button:hover{
     width: 44%;
     height: auto;
 }
+
 video source{
   content: url("res/Pc.mp4") 
 }
@@ -228,9 +230,8 @@ video source{
 video source{
   content: url("res/Pc.mp4") 
 }
- 
-} 
-@media screen and (max-width:414px) and (max-height: 650px){
+}
+@media only screen and (max-width:600px){
   body{
     height: 120vh;
   }
@@ -258,7 +259,6 @@ video source{
   button{
     margin-left: 0%;
     width: 50vw;
-    border-radius: 2%;
     background: #9849ff;
   }
   video source{
@@ -296,7 +296,8 @@ video source{
     width:270px;
   }
   #char-counter{
-    left: 235px;
+    top:9vh;
+    left: 56vw;
   }
 }
 footer {
