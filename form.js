@@ -19,3 +19,21 @@ function scrollToTop(){
     behavior: 'smooth' // This ensures the scrolling is smooth
   });
 }
+
+const textarea = document.querySelector('textarea');
+const wordCounter = document.querySelector('#word-counter');
+const charCounter = 250;
+
+textarea.addEventListener('input', function () {
+    const currentLength = this.value.length; // Get current character length
+
+    // Update the character counter
+    charCounter.textContent = `${currentLength} / ${charLimit}`;
+
+    // Prevent additional characters from being added beyond the limit
+    if (currentLength > charLimit) {
+        // Trim the content to the allowed character limit
+        this.value = this.value.slice(0, charLimit);
+        charCounter.textContent = `${charLimit} / ${charLimit}`;
+    }
+});
