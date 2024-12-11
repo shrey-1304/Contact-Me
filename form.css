@@ -268,8 +268,17 @@ footer {
 .to-top:hover::after{
   transition: box-shadow 0.3s;
 }
-
-
+ @media only screen and (max-width:768px) {
+  .box{
+    scale: 130%;
+  }
+  #char-counter{
+    left: 250px;
+  }
+  textarea{
+    width: 80%;
+  }
+} 
 @media only screen and (max-height: 600px){
   .box{
     width: 44%;
@@ -280,7 +289,7 @@ video source{
   content: url("res/Pc.mp4") 
 }
 
-}
+} 
 @media only screen and (min-height: 600px){
   .box{
     width: 44%;
@@ -289,7 +298,7 @@ video source{
 video source{
   content: url("res/Pc.mp4") 
 }
-}
+} 
 @media only screen and (max-width:480px){
   body{
     font-size: 16px;
@@ -360,3 +369,5 @@ video source{
     left: 56vw;
   }
 }
+
+  
