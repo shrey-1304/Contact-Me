@@ -59,8 +59,9 @@ p{
     margin-bottom:30px;
 }
 form{
-    padding-left: 3%;
-    justify-content: left;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 .name{
     justify-content: center;
@@ -117,6 +118,39 @@ svg{
     height: 40px;
     color: #cfcfcf;
     outline: none;
+}
+
+.textarea-container {
+  position: relative;
+  margin-top: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+textarea {
+  border-radius: 5px;
+  outline: none;
+  color:white ;
+  background-color: #3333332e;
+  margin-left: 30px;
+  width: 60%;
+  height: 60px; /* Fixed height */
+  resize: none; /* Prevent resizing */
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+textarea:focus{
+  outline:solid #d079ff;
+}
+#char-counter {
+  position: absolute;
+  top: 2px;
+  left: 390px;
+  font-size: 14px;
+  color: #aaa;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 a{
   text-decoration: none;
@@ -179,7 +213,7 @@ button:hover{
 @media only screen and (max-height: 600px){
   .box{
     width: 44%;
-    height: 80%;
+    height: 84%;
 }
 video source{
   content: url("res/Pc.mp4") 
@@ -189,7 +223,7 @@ video source{
 @media only screen and (min-height: 600px){
   .box{
     width: 44%;
-    height: 65%;
+    height: 68%;
 }
 video source{
   content: url("res/Pc.mp4") 
@@ -204,7 +238,7 @@ video source{
     align-items:center;
   }
   .box{
-    padding: 2%;
+    padding: 3%;
     width:80%;
     height: 50%;
   }
@@ -216,7 +250,7 @@ video source{
   }
   .message{
     font-size: 0.8rem;
-    margin-bottom: 17%;
+    margin-bottom: 10%;
   }
   .message a{
     font-size: 0.7rem;
@@ -233,10 +267,6 @@ video source{
   p a#lk:hover::after{
     width: 13.6%; /* Expand fully */
     left: 29%; /* Reset left position */
-  }
-  p a#dc:hover::after{
-    width: 11.5%; /* Expand fully */
-    left: 46.6%; /* Reset left position */
   }
   p a#tw:hover::after{
     width: 9%; /* Expand fully */
@@ -260,7 +290,14 @@ video source{
   .to-top{
     font-size: 5px;
   }
-
+  textarea{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width:270px;
+  }
+  #char-counter{
+    left: 235px;
+  }
 }
 footer {
   position:static;
