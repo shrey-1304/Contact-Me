@@ -268,7 +268,7 @@ footer {
 .to-top:hover::after{
   transition: box-shadow 0.3s;
 }
- @media only screen and (max-width:768px) {
+ @media only screen and (min-width:481px) {
   .box{
     scale: 130%;
   }
