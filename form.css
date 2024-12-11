@@ -283,8 +283,11 @@ footer {
   .box{
     width: 44%;
     height: auto;
-}
 
+  }
+  #char-counter {
+    left:70%;
+  }
 video source{
   content: url("res/Pc.mp4") 
 }
@@ -294,6 +297,9 @@ video source{
   .box{
     width: 44%;
     height: auto;
+}
+#char-counter {
+  left:70%;
 }
 video source{
   content: url("res/Pc.mp4") 
