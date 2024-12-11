@@ -223,7 +223,7 @@ video source{
 @media only screen and (min-height: 600px){
   .box{
     width: 44%;
-    height: 68%;
+    height: 70%;
 }
 video source{
   content: url("res/Pc.mp4") 
