@@ -146,7 +146,7 @@ textarea:focus{
 #char-counter {
   position: absolute;
   top: 2px;
-  left: 390px;
+  left: 70%;
   font-size: 14px;
   color: #aaa;
   padding: 2px 5px;
