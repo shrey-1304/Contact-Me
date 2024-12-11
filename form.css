@@ -213,7 +213,7 @@ button:hover{
 @media only screen and (max-height: 600px){
   .box{
     width: 44%;
-    height: 84%;
+    height: auto;
 }
 video source{
   content: url("res/Pc.mp4") 
@@ -223,7 +223,7 @@ video source{
 @media only screen and (min-height: 600px){
   .box{
     width: 44%;
-    height: 70%;
+    height: auto;
 }
 video source{
   content: url("res/Pc.mp4") 
