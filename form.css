@@ -385,6 +385,9 @@ textarea{
 
 
  @media only screen and (min-width: 1024px){
+  body{
+    height: 120vh;
+  }
   .box{
     width: 44%;
     height: auto;
