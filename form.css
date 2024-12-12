@@ -133,9 +133,9 @@ textarea {
   color:white ;
   background-color: #3333332e;
   margin-left: 30px;
-  width: 60%;
-  height: 60px; /* Fixed height */
-  resize: none; /* Prevent resizing */
+
+  height: 60px;
+  resize: none; 
   font-size: 12px;
   padding: 10px;
   box-sizing: border-box;
@@ -146,8 +146,6 @@ textarea:focus{
 }
 #char-counter {
   position: absolute;
-  top: 2px;
-  left: 390px;
   font-size: 14px;
   color: #aaa;
   padding: 2px 5px;
@@ -166,39 +164,23 @@ label{
 .message{
   font-size: 1rem;
 }
+
 p a{
-  font-size: 0.9rem;
-
-}
-p a::after {
-  margin-top: 4%;
-  content: '';
-  position: absolute;
-  left: 53%; /* Start from the center */
-  width: 0;
-  height: 2px;
-  background-color: #8000ff; /* Purple underline */
-  transition: width 0.3s ease, left 0.3s ease;
-}
-p a#lk:hover::after{
-  width: 10%; /* Expand fully */
-  left: 40%; /* Reset left position */
-}
-p a#tw:hover::after{
-  width: 8%; /* Expand fully */
-  left: 53%; /* Reset left position */
+  font-size:0.9rem;
+  transition: font-size ease-out 0.3s;
 }
 
-
+p a:hover{
+  font-size: 0.92rem;
+}
 button{
   margin-top: 0%;
-  font-size: 17px;
   cursor: pointer;
     background-color: #a600ff;
     color: white;
     border:solid transparent;
     border-radius: 30px;
-    width: 50%;
+    width: 10%;
     height: 50px;
     transition: background-color 0.5s;
 }
@@ -228,13 +210,13 @@ footer {
 }
 
 .footer-social a {
+
   transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
   margin-right: 20px;
   color: #fff;
-  font-size: 30px;
+  font-size: 50px;
 }
+
 
 .footer-social a:hover {
   color: #a600ff;
@@ -269,8 +251,8 @@ footer {
   transition: box-shadow 0.3s;
 }
 
-/* MOBILE */
-@media only screen and (min-width:320px){
+
+@media only screen and (min-width:320px) and (max-width:480px){
   body{
     font-size: 16px;
     height: 120vh;
@@ -298,28 +280,18 @@ footer {
   }
   button{
     margin-left: 0%;
-    width: 50vw;
+    width: 50%;
     background: #9849ff;
   }
   video source{
-    content: url("res/Mobile.mp4") 
-  }
-  p a#lk:hover::after{
-    width: 13.6%; /* Expand fully */
-    left: 29%; /* Reset left position */
-  }
-  p a#tw:hover::after{
-    width: 9%; /* Expand fully */
-    left: 64%; /* Reset left position */
-
-  }
+    content: url("res/Mobile.mp4") }
   .footer-social a {
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin-right: 2px;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
   }
   
   .footer-social a:hover {
@@ -328,12 +300,12 @@ footer {
     transition: font-size 0.3s;
   }
   .to-top{
-    font-size: 5px;
+    font-size: 10px;
   }
   textarea{
     margin-bottom: 20px;
     margin-left: 10px;
-    width:270px;
+    width:85%;
   }
   #char-counter{
     top:60px;
@@ -341,37 +313,50 @@ footer {
   }
 }
 
-/* TABLETS */
- @media only screen and (min-width:481px){
+
+ @media only screen and (min-width:481px) and (max-width:768px) {
   .box{
-    scale: 130%;
+    scale: 100%;
   }
   #char-counter{
-    left: 300px;
+    left: 76%;
+    top : 50px;
   }
   textarea{
-    width: 80%;
+    margin-left: 4.5%;
+    width: 87%;
+  }
+  button{
+    width:70%;
   }
 } 
 
-/* LAPTOPS */
-@media only screen and (min-width: 769px){
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+  .video-container{
+    height: 100vh;
+  }
   .box{
     width: 44%;
     height: auto;
 
   }
   #char-counter {
-    left:76%;
+    top:60px;
+    left:74%;
+    font-size: 10px;
   }
 video source{
   content: url("res/Pc.mp4") 
 }
+textarea{
+  width:65%;
+}
 
 } 
 
-/* LARGE LAPTOP SCREENS */
-@media only screen and (min-width: 1025px){
+
+ @media only screen and (min-width: 1024px){
   .box{
     width: 44%;
     height: auto;
@@ -383,15 +368,22 @@ video source{
   content: url("res/Pc.mp4") 
 }
 textarea{
-  width:60%;
+  width:65%;
 }
-} 
-/* 4K */
+button{
+  width:50%;
+}
+}  
+
 @media only screen and (min-width:1441px) {
   .box{
     width:30%;
   }
   textarea{
-    width:55%;
+    width:45%;
+  }
+  #char-counter{
+    top:50px;
+    left:50%;
   }
 }
