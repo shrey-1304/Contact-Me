@@ -270,7 +270,7 @@ footer {
 }
 
 /* MOBILE */
-@media only screen and (max-width:480px){
+@media only screen and (max-width:480px), screen and (max-width:320px){
   body{
     font-size: 16px;
     height: 120vh;
@@ -341,16 +341,13 @@ footer {
   }
 }
 
-  
-
-
 /* TABLETS */
- @media only screen and (min-width:481px), screen and (max-width:768px) {
+ @media only screen and (min-width:481px){
   .box{
     scale: 130%;
   }
   #char-counter{
-    left: 250px;
+    left: 300px;
   }
   textarea{
     width: 80%;
@@ -358,14 +355,14 @@ footer {
 } 
 
 /* LAPTOPS */
-@media only screen and (min-width: 769px), not screen and (max-width:1024px){
+@media only screen and (min-width: 769px){
   .box{
     width: 44%;
     height: auto;
 
   }
   #char-counter {
-    left:70%;
+    left:76%;
   }
 video source{
   content: url("res/Pc.mp4") 
@@ -373,7 +370,7 @@ video source{
 
 } 
 
-/* LARGE SCREENS */
+/* LARGE LAPTOP SCREENS */
 @media only screen and (min-width: 1025px){
   .box{
     width: 44%;
@@ -385,4 +382,16 @@ video source{
 video source{
   content: url("res/Pc.mp4") 
 }
+textarea{
+  width:60%;
+}
 } 
+/* 4K */
+@media only screen and (min-width:1441px) {
+  .box{
+    width:30%;
+  }
+  textarea{
+    width:55%;
+  }
+}
