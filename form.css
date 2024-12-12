@@ -341,14 +341,13 @@ footer {
   }
 }
 
-
- /* @media only screen and (min-width:481px) and (max-width:768px) {
+ @media only screen and (min-width:481px) and (max-width:768px) {
   .box{
     scale: 100%;
   }
   #char-counter{
-    left: 76%;
-    top : 50px;
+    left: 78%;
+    top : 57px;
   }
   textarea{
     margin-left: 4.5%;
@@ -357,7 +356,7 @@ footer {
   button{
     width:70%;
   }
-}  */
+} 
 
 
 @media only screen and (min-width: 769px) and (max-width:1024px) {
@@ -371,16 +370,18 @@ footer {
   }
   #char-counter {
     top:60px;
-    left:74%;
+    left:80%;
     font-size: 10px;
   }
 video source{
   content: url("res/Pc.mp4") 
 }
 textarea{
-  width:65%;
+  width:88%;
 }
-
+button{
+  width:40%;
+}
 } 
 
 
